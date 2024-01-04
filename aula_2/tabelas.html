@@ -5,13 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tabelas</title>
   </head>
-  <body>
+  <body style="margin-bottom: 600px">
     <h1>Tabelas</h1>
     <a href="listas.html"> Link para Listas </a>
     <br />
     <a href="tags_especiais.html"> Link para Tags Especiais </a>
     <hr />
-    <table>
+
+    <h3>Tabela Simples</h3>
+    <table border="1">
       <!-- Início do Cabeçalho -->
       <tr>
         <th>Nome</th>
@@ -30,5 +32,78 @@
         <td>Front end</td>
       </tr>
     </table>
+    <hr />
+
+    <h3>Tabela com Cabeçalho e Rodapé</h3>
+    <table border="3" width="250px" cellpadding="4" cellspacing="5">
+      <!--Cabeçalho-->
+      <thead>
+        <!--Dentro da thead utiliza-se as Tags "th"-->
+        <tr>
+          <th>Nome</th>
+          <th>Idade</th>
+          <th>Profissão</th>
+        </tr>
+      </thead>
+      <!--Corpo-->
+      <tbody>
+        <tr>
+          <td>João</td>
+          <td>22</td>
+          <td>Programador</td>
+        </tr>
+        <tr>
+          <td>Maria</td>
+          <td>25</td>
+          <td>Front end</td>
+        </tr>
+      </tbody>
+      <!--Rodapé-->
+      <tfoot>
+        <tr>
+          <td colspan="2">Total de Registros:</td>
+          <td>2</td>
+        </tr>
+      </tfoot>
+    </table>
+    <hr />
+
+    <h3>Tabela mais trabalhada</h3>
+    <table border="3">
+      <thead>
+        <tr>
+          <th colspan="4">Aulas HTML</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="3">Capítulo 1</td>
+        </tr>
+        <tr>
+          <td>Aula 1</td>
+          <td>Introdução</td>
+          <td>1:30min</td>
+        </tr>
+        <tr>
+          <td>Aula 2</td>
+          <td>Listas e Tabelas</td>
+          <td>2h</td>
+        </tr>
+        <tr>
+          <td rowspan="3">Capítulo 2</td>
+        </tr>
+        <tr>
+          <td>Aula 3</td>
+          <td>Links e âncoras</td>
+          <td>30min</td>
+        </tr>
+        <tr>
+          <td>Aula 4</td>
+          <td>Estudar</td>
+          <td>15min</td>
+        </tr>
+      </tbody>
+    </table>
+    <hr />
   </body>
 </html>
